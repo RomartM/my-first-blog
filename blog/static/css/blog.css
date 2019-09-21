@@ -1,0 +1,117 @@
+.page-header {
+    height: 300px;
+}
+
+nav.navbar.navbar-expand-lg.fixed-top, .page-header {
+    background-color: #444444;
+    background-image: url(/static/images/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+nav.navbar.navbar-expand-lg.fixed-top::before, .page-header::before {
+    content: "";
+    position:absolute;
+    background: linear-gradient(to right, #673AB7 , #ffff0000);
+    width: 100%;
+}
+
+nav.navbar.navbar-expand-lg.fixed-top::before {
+    height: 56px;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 3px black;
+}
+
+.page-header::before {
+    height: 300px;
+}
+
+.page-header h1 {
+    z-index: 5;
+    position: relative;
+    padding: 30px;
+    vertical-align: middle;
+    line-height: 220px;
+}
+
+.page-header h1 a {
+    color: white;
+    border-left-style: solid;
+    border-left-width: thick;
+    padding-left: 20px;
+    margin-left: 22px;
+    font-weight: 900;
+}
+
+nav.navbar.navbar-expand-lg.fixed-top a {
+    color: white;
+}
+
+h1 a, h2 a, nav.navbar.navbar-expand-lg.fixed-top a{
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.post {border-bottom-style: solid;border-bottom-width: thin;border-color: #616161;margin-bottom: 15px;padding-left: 10px;}
+
+.content.container {
+    background-color: white;
+    padding: 30px;
+    margin-top: -15px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+}
+
+.date {
+    background: linear-gradient(to right, #673AB7 , #3949AB);
+    float: right;
+    padding: 1px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.post h2 a {
+    color: #673ab7;
+    font-weight: 500;
+}
+
+.post h2 {
+    max-width: 60%;
+}
+
+.col-md-8 {
+    border-right-style: solid;
+    padding: 15px;
+    border-color: #424242;
+}
+
+
+
+h2 {
+    color: #673bb7;
+    margin-bottom: 30px;
+}
+
+input#id_title, textarea#id_text {
+    outline: none;
+    width: 100%;
+    border-radius: 4px;
+    border-style: double;
+    border-color: #673bb7;
+}
+
+button.save.btn.btn-default {
+    font-weight: 500;
+}
+
+
+a.navbar-brand {
+    position: relative;
+}
+
+div#navbarNavAltMarkup {
+    position: relative;
+}
